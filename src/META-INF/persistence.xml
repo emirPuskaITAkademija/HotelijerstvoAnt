@@ -2,14 +2,14 @@
 <persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
   <persistence-unit name="HotelijerstvoAntPU" transaction-type="RESOURCE_LOCAL">
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
-    <class>app.business.entity.Guest</class>
-    <class>app.business.entity.Privilege</class>
-    <class>app.business.entity.Country</class>
-    <class>app.business.entity.Reservation</class>
-    <class>app.business.entity.Room</class>
-    <class>app.business.entity.Town</class>
-    <class>app.business.entity.User</class>
-    <class>app.business.entity.Address</class>
+    <class>app.reservation.entity.Reservation</class>
+    <class>app.user.entity.User</class>
+    <class>app.room.entity.Room</class>
+    <class>app.guest.entity.Guest</class>
+    <class>app.privilege.entity.Privilege</class>
+    <class>app.country.entity.Country</class>
+    <class>app.country.town.entity.Town</class>
+    <class>app.country.town.address.entity.Address</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/hotelijerstvo"/>
       <property name="javax.persistence.jdbc.user" value="root"/>
